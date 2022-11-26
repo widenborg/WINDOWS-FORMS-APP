@@ -1,0 +1,276 @@
+<?xml version="1.0" encoding="utf-8"?>
+<wsdl:definitions xmlns:soap12="http://schemas.xmlsoap.org/wsdl/soap12/" xmlns:s="http://www.w3.org/2001/XMLSchema" xmlns:tm="http://microsoft.com/wsdl/mime/textMatching/" xmlns:soapenc="http://schemas.xmlsoap.org/soap/encoding/" xmlns:http="http://schemas.xmlsoap.org/wsdl/http/" xmlns:tns="http://tempuri.org/" xmlns:mime="http://schemas.xmlsoap.org/wsdl/mime/" xmlns:soap="http://schemas.xmlsoap.org/wsdl/soap/" targetNamespace="http://tempuri.org/" xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">
+  <wsdl:types>
+    <s:schema elementFormDefault="qualified" targetNamespace="http://tempuri.org/">
+      <s:element name="GetEmployees">
+        <s:complexType />
+      </s:element>
+      <s:element name="GetEmployeesResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="GetEmployeesResult" type="tns:ArrayOfCRONUS_Sverige_AB_Employee" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:complexType name="ArrayOfCRONUS_Sverige_AB_Employee">
+        <s:sequence>
+          <s:element minOccurs="0" maxOccurs="unbounded" name="CRONUS_Sverige_AB_Employee" nillable="true" type="tns:CRONUS_Sverige_AB_Employee" />
+        </s:sequence>
+      </s:complexType>
+      <s:complexType name="CRONUS_Sverige_AB_Employee">
+        <s:sequence>
+          <s:element minOccurs="0" maxOccurs="1" name="timestamp" type="s:base64Binary" />
+          <s:element minOccurs="0" maxOccurs="1" name="No_" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="First_Name" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="Middle_Name" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="Last_Name" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="Initials" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="Job_Title" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="Search_Name" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="Address" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="Address_2" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="City" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="Post_Code" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="County" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="Phone_No_" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="Mobile_Phone_No_" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="E_Mail" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="Alt__Address_Code" type="s:string" />
+          <s:element minOccurs="1" maxOccurs="1" name="Alt__Address_Start_Date" type="s:dateTime" />
+          <s:element minOccurs="1" maxOccurs="1" name="Alt__Address_End_Date" type="s:dateTime" />
+          <s:element minOccurs="0" maxOccurs="1" name="Picture" type="s:base64Binary" />
+          <s:element minOccurs="1" maxOccurs="1" name="Birth_Date" type="s:dateTime" />
+          <s:element minOccurs="0" maxOccurs="1" name="Social_Security_No_" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="Union_Code" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="Union_Membership_No_" type="s:string" />
+          <s:element minOccurs="1" maxOccurs="1" name="Sex" type="s:int" />
+          <s:element minOccurs="0" maxOccurs="1" name="Country_Region_Code" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="Manager_No_" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="Emplymt__Contract_Code" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="Statistics_Group_Code" type="s:string" />
+          <s:element minOccurs="1" maxOccurs="1" name="Employment_Date" type="s:dateTime" />
+          <s:element minOccurs="1" maxOccurs="1" name="Status" type="s:int" />
+          <s:element minOccurs="1" maxOccurs="1" name="Inactive_Date" type="s:dateTime" />
+          <s:element minOccurs="0" maxOccurs="1" name="Cause_of_Inactivity_Code" type="s:string" />
+          <s:element minOccurs="1" maxOccurs="1" name="Termination_Date" type="s:dateTime" />
+          <s:element minOccurs="0" maxOccurs="1" name="Grounds_for_Term__Code" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="Global_Dimension_1_Code" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="Global_Dimension_2_Code" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="Resource_No_" type="s:string" />
+          <s:element minOccurs="1" maxOccurs="1" name="Last_Date_Modified" type="s:dateTime" />
+          <s:element minOccurs="0" maxOccurs="1" name="Extension" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="Pager" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="Fax_No_" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="Company_E_Mail" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="Title" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="Salespers__Purch__Code" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="No__Series" type="s:string" />
+        </s:sequence>
+      </s:complexType>
+      <s:element name="GetEmployee">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="empID" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="GetEmployeeResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="GetEmployeeResult" type="tns:CRONUS_Sverige_AB_Employee" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="InsertEmployee">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="empID" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="firstName" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="lastName" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="InsertEmployeeResponse">
+        <s:complexType />
+      </s:element>
+      <s:element name="UpdateEmployee">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="empID" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="firstName" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="lastName" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="UpdateEmployeeResponse">
+        <s:complexType />
+      </s:element>
+      <s:element name="DeleteEmployee">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="empID" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="DeleteEmployeeResponse">
+        <s:complexType />
+      </s:element>
+    </s:schema>
+  </wsdl:types>
+  <wsdl:message name="GetEmployeesSoapIn">
+    <wsdl:part name="parameters" element="tns:GetEmployees" />
+  </wsdl:message>
+  <wsdl:message name="GetEmployeesSoapOut">
+    <wsdl:part name="parameters" element="tns:GetEmployeesResponse" />
+  </wsdl:message>
+  <wsdl:message name="GetEmployeeSoapIn">
+    <wsdl:part name="parameters" element="tns:GetEmployee" />
+  </wsdl:message>
+  <wsdl:message name="GetEmployeeSoapOut">
+    <wsdl:part name="parameters" element="tns:GetEmployeeResponse" />
+  </wsdl:message>
+  <wsdl:message name="InsertEmployeeSoapIn">
+    <wsdl:part name="parameters" element="tns:InsertEmployee" />
+  </wsdl:message>
+  <wsdl:message name="InsertEmployeeSoapOut">
+    <wsdl:part name="parameters" element="tns:InsertEmployeeResponse" />
+  </wsdl:message>
+  <wsdl:message name="UpdateEmployeeSoapIn">
+    <wsdl:part name="parameters" element="tns:UpdateEmployee" />
+  </wsdl:message>
+  <wsdl:message name="UpdateEmployeeSoapOut">
+    <wsdl:part name="parameters" element="tns:UpdateEmployeeResponse" />
+  </wsdl:message>
+  <wsdl:message name="DeleteEmployeeSoapIn">
+    <wsdl:part name="parameters" element="tns:DeleteEmployee" />
+  </wsdl:message>
+  <wsdl:message name="DeleteEmployeeSoapOut">
+    <wsdl:part name="parameters" element="tns:DeleteEmployeeResponse" />
+  </wsdl:message>
+  <wsdl:portType name="CronusServiceSoap">
+    <wsdl:operation name="GetEmployees">
+      <wsdl:input message="tns:GetEmployeesSoapIn" />
+      <wsdl:output message="tns:GetEmployeesSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="GetEmployee">
+      <wsdl:input message="tns:GetEmployeeSoapIn" />
+      <wsdl:output message="tns:GetEmployeeSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="InsertEmployee">
+      <wsdl:input message="tns:InsertEmployeeSoapIn" />
+      <wsdl:output message="tns:InsertEmployeeSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="UpdateEmployee">
+      <wsdl:input message="tns:UpdateEmployeeSoapIn" />
+      <wsdl:output message="tns:UpdateEmployeeSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="DeleteEmployee">
+      <wsdl:input message="tns:DeleteEmployeeSoapIn" />
+      <wsdl:output message="tns:DeleteEmployeeSoapOut" />
+    </wsdl:operation>
+  </wsdl:portType>
+  <wsdl:binding name="CronusServiceSoap" type="tns:CronusServiceSoap">
+    <soap:binding transport="http://schemas.xmlsoap.org/soap/http" />
+    <wsdl:operation name="GetEmployees">
+      <soap:operation soapAction="http://tempuri.org/GetEmployees" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetEmployee">
+      <soap:operation soapAction="http://tempuri.org/GetEmployee" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="InsertEmployee">
+      <soap:operation soapAction="http://tempuri.org/InsertEmployee" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="UpdateEmployee">
+      <soap:operation soapAction="http://tempuri.org/UpdateEmployee" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="DeleteEmployee">
+      <soap:operation soapAction="http://tempuri.org/DeleteEmployee" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+  </wsdl:binding>
+  <wsdl:binding name="CronusServiceSoap12" type="tns:CronusServiceSoap">
+    <soap12:binding transport="http://schemas.xmlsoap.org/soap/http" />
+    <wsdl:operation name="GetEmployees">
+      <soap12:operation soapAction="http://tempuri.org/GetEmployees" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetEmployee">
+      <soap12:operation soapAction="http://tempuri.org/GetEmployee" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="InsertEmployee">
+      <soap12:operation soapAction="http://tempuri.org/InsertEmployee" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="UpdateEmployee">
+      <soap12:operation soapAction="http://tempuri.org/UpdateEmployee" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="DeleteEmployee">
+      <soap12:operation soapAction="http://tempuri.org/DeleteEmployee" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+  </wsdl:binding>
+  <wsdl:service name="CronusService">
+    <wsdl:port name="CronusServiceSoap" binding="tns:CronusServiceSoap">
+      <soap:address location="http://localhost/CronusWebApplication/CronusService.asmx" />
+    </wsdl:port>
+    <wsdl:port name="CronusServiceSoap12" binding="tns:CronusServiceSoap12">
+      <soap12:address location="http://localhost/CronusWebApplication/CronusService.asmx" />
+    </wsdl:port>
+  </wsdl:service>
+</wsdl:definitions>

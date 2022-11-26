@@ -1,0 +1,488 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<edmx:Edmx Version="3.0" xmlns:edmx="http://schemas.microsoft.com/ado/2009/11/edmx">
+  <!-- EF Runtime content -->
+  <edmx:Runtime>
+    <!-- SSDL content -->
+    <edmx:StorageModels>
+      <Schema Namespace="CronusModel.Store" Provider="System.Data.SqlClient" ProviderManifestToken="2012" Alias="Self" xmlns:store="http://schemas.microsoft.com/ado/2007/12/edm/EntityStoreSchemaGenerator" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm/ssdl">
+        <EntityType Name="CRONUS Sverige AB$Employee">
+          <Key>
+            <PropertyRef Name="No_" />
+          </Key>
+          <Property Name="timestamp" Type="timestamp" StoreGeneratedPattern="Computed" Nullable="false" />
+          <Property Name="No_" Type="varchar" MaxLength="20" Nullable="false" />
+          <Property Name="First Name" Type="varchar" MaxLength="30" Nullable="false" />
+          <Property Name="Middle Name" Type="varchar" MaxLength="30" Nullable="false" />
+          <Property Name="Last Name" Type="varchar" MaxLength="30" Nullable="false" />
+          <Property Name="Initials" Type="varchar" MaxLength="30" Nullable="false" />
+          <Property Name="Job Title" Type="varchar" MaxLength="30" Nullable="false" />
+          <Property Name="Search Name" Type="varchar" MaxLength="30" Nullable="false" />
+          <Property Name="Address" Type="varchar" MaxLength="50" Nullable="false" />
+          <Property Name="Address 2" Type="varchar" MaxLength="50" Nullable="false" />
+          <Property Name="City" Type="varchar" MaxLength="30" Nullable="false" />
+          <Property Name="Post Code" Type="varchar" MaxLength="20" Nullable="false" />
+          <Property Name="County" Type="varchar" MaxLength="30" Nullable="false" />
+          <Property Name="Phone No_" Type="varchar" MaxLength="30" Nullable="false" />
+          <Property Name="Mobile Phone No_" Type="varchar" MaxLength="30" Nullable="false" />
+          <Property Name="E-Mail" Type="varchar" MaxLength="80" Nullable="false" />
+          <Property Name="Alt_ Address Code" Type="varchar" MaxLength="10" Nullable="false" />
+          <Property Name="Alt_ Address Start Date" Type="datetime" Nullable="false" />
+          <Property Name="Alt_ Address End Date" Type="datetime" Nullable="false" />
+          <Property Name="Picture" Type="image" />
+          <Property Name="Birth Date" Type="datetime" Nullable="false" />
+          <Property Name="Social Security No_" Type="varchar" MaxLength="30" Nullable="false" />
+          <Property Name="Union Code" Type="varchar" MaxLength="10" Nullable="false" />
+          <Property Name="Union Membership No_" Type="varchar" MaxLength="30" Nullable="false" />
+          <Property Name="Sex" Type="int" Nullable="false" />
+          <Property Name="Country_Region Code" Type="varchar" MaxLength="10" Nullable="false" />
+          <Property Name="Manager No_" Type="varchar" MaxLength="20" Nullable="false" />
+          <Property Name="Emplymt_ Contract Code" Type="varchar" MaxLength="10" Nullable="false" />
+          <Property Name="Statistics Group Code" Type="varchar" MaxLength="10" Nullable="false" />
+          <Property Name="Employment Date" Type="datetime" Nullable="false" />
+          <Property Name="Status" Type="int" Nullable="false" />
+          <Property Name="Inactive Date" Type="datetime" Nullable="false" />
+          <Property Name="Cause of Inactivity Code" Type="varchar" MaxLength="10" Nullable="false" />
+          <Property Name="Termination Date" Type="datetime" Nullable="false" />
+          <Property Name="Grounds for Term_ Code" Type="varchar" MaxLength="10" Nullable="false" />
+          <Property Name="Global Dimension 1 Code" Type="varchar" MaxLength="20" Nullable="false" />
+          <Property Name="Global Dimension 2 Code" Type="varchar" MaxLength="20" Nullable="false" />
+          <Property Name="Resource No_" Type="varchar" MaxLength="20" Nullable="false" />
+          <Property Name="Last Date Modified" Type="datetime" Nullable="false" />
+          <Property Name="Extension" Type="varchar" MaxLength="30" Nullable="false" />
+          <Property Name="Pager" Type="varchar" MaxLength="30" Nullable="false" />
+          <Property Name="Fax No_" Type="varchar" MaxLength="30" Nullable="false" />
+          <Property Name="Company E-Mail" Type="varchar" MaxLength="80" Nullable="false" />
+          <Property Name="Title" Type="varchar" MaxLength="30" Nullable="false" />
+          <Property Name="Salespers__Purch_ Code" Type="varchar" MaxLength="10" Nullable="false" />
+          <Property Name="No_ Series" Type="varchar" MaxLength="10" Nullable="false" />
+        </EntityType>
+        <EntityType Name="CRONUS Sverige AB$Employee Absence">
+          <Key>
+            <PropertyRef Name="Entry No_" />
+          </Key>
+          <Property Name="timestamp" Type="timestamp" StoreGeneratedPattern="Computed" Nullable="false" />
+          <Property Name="Entry No_" Type="int" Nullable="false" />
+          <Property Name="Employee No_" Type="varchar" MaxLength="20" Nullable="false" />
+          <Property Name="From Date" Type="datetime" Nullable="false" />
+          <Property Name="To Date" Type="datetime" Nullable="false" />
+          <Property Name="Cause of Absence Code" Type="varchar" MaxLength="10" Nullable="false" />
+          <Property Name="Description" Type="varchar" MaxLength="30" Nullable="false" />
+          <Property Name="Quantity" Type="decimal" Precision="38" Scale="20" Nullable="false" />
+          <Property Name="Unit of Measure Code" Type="varchar" MaxLength="10" Nullable="false" />
+          <Property Name="Quantity (Base)" Type="decimal" Precision="38" Scale="20" Nullable="false" />
+          <Property Name="Qty_ per Unit of Measure" Type="decimal" Precision="38" Scale="20" Nullable="false" />
+        </EntityType>
+        <EntityType Name="CRONUS Sverige AB$Employee Portal Setup">
+          <Key>
+            <PropertyRef Name="Primary Key" />
+          </Key>
+          <Property Name="timestamp" Type="timestamp" StoreGeneratedPattern="Computed" Nullable="false" />
+          <Property Name="Primary Key" Type="varchar" MaxLength="10" Nullable="false" />
+          <Property Name="Search Limit" Type="int" Nullable="false" />
+          <Property Name="Temp_ Key Index" Type="int" Nullable="false" />
+          <Property Name="Temp_ Table No_" Type="int" Nullable="false" />
+          <Property Name="Temp_ Key String" Type="varchar" MaxLength="250" Nullable="false" />
+          <Property Name="Temp_ Option Value" Type="int" Nullable="false" />
+          <Property Name="Temp_ Option Caption" Type="varchar" MaxLength="250" Nullable="false" />
+          <Property Name="Temp_ SharePoint Site Name" Type="varchar" MaxLength="250" Nullable="false" />
+          <Property Name="Back End Public Key" Type="image" />
+          <Property Name="Back End Private Key" Type="image" />
+          <Property Name="Write Debugging Info_" Type="tinyint" Nullable="false" />
+          <Property Name="Config Tool Pane Caption ID" Type="int" Nullable="false" />
+          <Property Name="Config TP WP Request Capt ID" Type="int" Nullable="false" />
+          <Property Name="Config TP Initial Req_ Capt ID" Type="int" Nullable="false" />
+          <Property Name="Config TP Group Capt ID" Type="int" Nullable="false" />
+          <Property Name="Search Tool Pane Caption ID" Type="int" Nullable="false" />
+          <Property Name="Search Config Table ID" Type="int" Nullable="false" />
+          <Property Name="Search TP All Tables Capt ID" Type="int" Nullable="false" />
+          <Property Name="Config Tool Pane Caption" Type="varchar" MaxLength="80" Nullable="false" />
+          <Property Name="Config TP WP Request Caption" Type="varchar" MaxLength="80" Nullable="false" />
+          <Property Name="Config TP Initial Req_ Caption" Type="varchar" MaxLength="80" Nullable="false" />
+          <Property Name="Config TP Group Caption" Type="varchar" MaxLength="80" Nullable="false" />
+          <Property Name="Search Tool Pane Caption" Type="varchar" MaxLength="80" Nullable="false" />
+          <Property Name="Search Config Table Caption" Type="varchar" MaxLength="80" Nullable="false" />
+          <Property Name="Search TP All Tables Caption" Type="varchar" MaxLength="80" Nullable="false" />
+          <Property Name="Debugging Path" Type="varchar" MaxLength="250" Nullable="false" />
+        </EntityType>
+        <EntityType Name="CRONUS Sverige AB$Employee Qualification">
+          <Key>
+            <PropertyRef Name="Employee No_" />
+            <PropertyRef Name="Line No_" />
+          </Key>
+          <Property Name="timestamp" Type="timestamp" StoreGeneratedPattern="Computed" Nullable="false" />
+          <Property Name="Employee No_" Type="varchar" MaxLength="20" Nullable="false" />
+          <Property Name="Line No_" Type="int" Nullable="false" />
+          <Property Name="Qualification Code" Type="varchar" MaxLength="10" Nullable="false" />
+          <Property Name="From Date" Type="datetime" Nullable="false" />
+          <Property Name="To Date" Type="datetime" Nullable="false" />
+          <Property Name="Type" Type="int" Nullable="false" />
+          <Property Name="Description" Type="varchar" MaxLength="30" Nullable="false" />
+          <Property Name="Institution_Company" Type="varchar" MaxLength="30" Nullable="false" />
+          <Property Name="Cost" Type="decimal" Precision="38" Scale="20" Nullable="false" />
+          <Property Name="Course Grade" Type="varchar" MaxLength="30" Nullable="false" />
+          <Property Name="Employee Status" Type="int" Nullable="false" />
+          <Property Name="Expiration Date" Type="datetime" Nullable="false" />
+        </EntityType>
+        <EntityType Name="CRONUS Sverige AB$Employee Relative">
+          <Key>
+            <PropertyRef Name="Employee No_" />
+            <PropertyRef Name="Line No_" />
+          </Key>
+          <Property Name="timestamp" Type="timestamp" StoreGeneratedPattern="Computed" Nullable="false" />
+          <Property Name="Employee No_" Type="varchar" MaxLength="20" Nullable="false" />
+          <Property Name="Line No_" Type="int" Nullable="false" />
+          <Property Name="Relative Code" Type="varchar" MaxLength="10" Nullable="false" />
+          <Property Name="First Name" Type="varchar" MaxLength="30" Nullable="false" />
+          <Property Name="Middle Name" Type="varchar" MaxLength="30" Nullable="false" />
+          <Property Name="Last Name" Type="varchar" MaxLength="30" Nullable="false" />
+          <Property Name="Birth Date" Type="datetime" Nullable="false" />
+          <Property Name="Phone No_" Type="varchar" MaxLength="30" Nullable="false" />
+          <Property Name="Relative_s Employee No_" Type="varchar" MaxLength="20" Nullable="false" />
+        </EntityType>
+        <EntityType Name="CRONUS Sverige AB$Employee Statistics Group">
+          <Key>
+            <PropertyRef Name="Code" />
+          </Key>
+          <Property Name="timestamp" Type="timestamp" StoreGeneratedPattern="Computed" Nullable="false" />
+          <Property Name="Code" Type="varchar" MaxLength="10" Nullable="false" />
+          <Property Name="Description" Type="varchar" MaxLength="30" Nullable="false" />
+        </EntityType>
+        <EntityContainer Name="CronusModelStoreContainer">
+          <EntitySet Name="CRONUS Sverige AB$Employee" EntityType="Self.CRONUS Sverige AB$Employee" Schema="dbo" store:Type="Tables" />
+          <EntitySet Name="CRONUS Sverige AB$Employee Absence" EntityType="Self.CRONUS Sverige AB$Employee Absence" Schema="dbo" store:Type="Tables" />
+          <EntitySet Name="CRONUS Sverige AB$Employee Portal Setup" EntityType="Self.CRONUS Sverige AB$Employee Portal Setup" Schema="dbo" store:Type="Tables" />
+          <EntitySet Name="CRONUS Sverige AB$Employee Qualification" EntityType="Self.CRONUS Sverige AB$Employee Qualification" Schema="dbo" store:Type="Tables" />
+          <EntitySet Name="CRONUS Sverige AB$Employee Relative" EntityType="Self.CRONUS Sverige AB$Employee Relative" Schema="dbo" store:Type="Tables" />
+          <EntitySet Name="CRONUS Sverige AB$Employee Statistics Group" EntityType="Self.CRONUS Sverige AB$Employee Statistics Group" Schema="dbo" store:Type="Tables" />
+        </EntityContainer>
+      </Schema>
+    </edmx:StorageModels>
+    <!-- CSDL content -->
+    <edmx:ConceptualModels>
+      <Schema Namespace="CronusModel" Alias="Self" annotation:UseStrongSpatialTypes="false" xmlns:annotation="http://schemas.microsoft.com/ado/2009/02/edm/annotation" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm">
+        <EntityType Name="CRONUS_Sverige_AB_Employee">
+          <Key>
+            <PropertyRef Name="No_" />
+          </Key>
+          <Property Name="timestamp" Type="Binary" MaxLength="8" FixedLength="true" Nullable="false" annotation:StoreGeneratedPattern="Computed" />
+          <Property Name="No_" Type="String" MaxLength="20" FixedLength="false" Unicode="false" Nullable="false" />
+          <Property Name="First_Name" Type="String" MaxLength="30" FixedLength="false" Unicode="false" Nullable="false" />
+          <Property Name="Middle_Name" Type="String" MaxLength="30" FixedLength="false" Unicode="false" Nullable="false" />
+          <Property Name="Last_Name" Type="String" MaxLength="30" FixedLength="false" Unicode="false" Nullable="false" />
+          <Property Name="Initials" Type="String" MaxLength="30" FixedLength="false" Unicode="false" Nullable="false" />
+          <Property Name="Job_Title" Type="String" MaxLength="30" FixedLength="false" Unicode="false" Nullable="false" />
+          <Property Name="Search_Name" Type="String" MaxLength="30" FixedLength="false" Unicode="false" Nullable="false" />
+          <Property Name="Address" Type="String" MaxLength="50" FixedLength="false" Unicode="false" Nullable="false" />
+          <Property Name="Address_2" Type="String" MaxLength="50" FixedLength="false" Unicode="false" Nullable="false" />
+          <Property Name="City" Type="String" MaxLength="30" FixedLength="false" Unicode="false" Nullable="false" />
+          <Property Name="Post_Code" Type="String" MaxLength="20" FixedLength="false" Unicode="false" Nullable="false" />
+          <Property Name="County" Type="String" MaxLength="30" FixedLength="false" Unicode="false" Nullable="false" />
+          <Property Name="Phone_No_" Type="String" MaxLength="30" FixedLength="false" Unicode="false" Nullable="false" />
+          <Property Name="Mobile_Phone_No_" Type="String" MaxLength="30" FixedLength="false" Unicode="false" Nullable="false" />
+          <Property Name="E_Mail" Type="String" MaxLength="80" FixedLength="false" Unicode="false" Nullable="false" />
+          <Property Name="Alt__Address_Code" Type="String" MaxLength="10" FixedLength="false" Unicode="false" Nullable="false" />
+          <Property Name="Alt__Address_Start_Date" Type="DateTime" Nullable="false" Precision="3" />
+          <Property Name="Alt__Address_End_Date" Type="DateTime" Nullable="false" Precision="3" />
+          <Property Name="Picture" Type="Binary" MaxLength="Max" FixedLength="false" />
+          <Property Name="Birth_Date" Type="DateTime" Nullable="false" Precision="3" />
+          <Property Name="Social_Security_No_" Type="String" MaxLength="30" FixedLength="false" Unicode="false" Nullable="false" />
+          <Property Name="Union_Code" Type="String" MaxLength="10" FixedLength="false" Unicode="false" Nullable="false" />
+          <Property Name="Union_Membership_No_" Type="String" MaxLength="30" FixedLength="false" Unicode="false" Nullable="false" />
+          <Property Name="Sex" Type="Int32" Nullable="false" />
+          <Property Name="Country_Region_Code" Type="String" MaxLength="10" FixedLength="false" Unicode="false" Nullable="false" />
+          <Property Name="Manager_No_" Type="String" MaxLength="20" FixedLength="false" Unicode="false" Nullable="false" />
+          <Property Name="Emplymt__Contract_Code" Type="String" MaxLength="10" FixedLength="false" Unicode="false" Nullable="false" />
+          <Property Name="Statistics_Group_Code" Type="String" MaxLength="10" FixedLength="false" Unicode="false" Nullable="false" />
+          <Property Name="Employment_Date" Type="DateTime" Nullable="false" Precision="3" />
+          <Property Name="Status" Type="Int32" Nullable="false" />
+          <Property Name="Inactive_Date" Type="DateTime" Nullable="false" Precision="3" />
+          <Property Name="Cause_of_Inactivity_Code" Type="String" MaxLength="10" FixedLength="false" Unicode="false" Nullable="false" />
+          <Property Name="Termination_Date" Type="DateTime" Nullable="false" Precision="3" />
+          <Property Name="Grounds_for_Term__Code" Type="String" MaxLength="10" FixedLength="false" Unicode="false" Nullable="false" />
+          <Property Name="Global_Dimension_1_Code" Type="String" MaxLength="20" FixedLength="false" Unicode="false" Nullable="false" />
+          <Property Name="Global_Dimension_2_Code" Type="String" MaxLength="20" FixedLength="false" Unicode="false" Nullable="false" />
+          <Property Name="Resource_No_" Type="String" MaxLength="20" FixedLength="false" Unicode="false" Nullable="false" />
+          <Property Name="Last_Date_Modified" Type="DateTime" Nullable="false" Precision="3" />
+          <Property Name="Extension" Type="String" MaxLength="30" FixedLength="false" Unicode="false" Nullable="false" />
+          <Property Name="Pager" Type="String" MaxLength="30" FixedLength="false" Unicode="false" Nullable="false" />
+          <Property Name="Fax_No_" Type="String" MaxLength="30" FixedLength="false" Unicode="false" Nullable="false" />
+          <Property Name="Company_E_Mail" Type="String" MaxLength="80" FixedLength="false" Unicode="false" Nullable="false" />
+          <Property Name="Title" Type="String" MaxLength="30" FixedLength="false" Unicode="false" Nullable="false" />
+          <Property Name="Salespers__Purch__Code" Type="String" MaxLength="10" FixedLength="false" Unicode="false" Nullable="false" />
+          <Property Name="No__Series" Type="String" MaxLength="10" FixedLength="false" Unicode="false" Nullable="false" />
+        </EntityType>
+        <EntityType Name="CRONUS_Sverige_AB_Employee_Absence">
+          <Key>
+            <PropertyRef Name="Entry_No_" />
+          </Key>
+          <Property Name="timestamp" Type="Binary" MaxLength="8" FixedLength="true" Nullable="false" annotation:StoreGeneratedPattern="Computed" />
+          <Property Name="Entry_No_" Type="Int32" Nullable="false" />
+          <Property Name="Employee_No_" Type="String" MaxLength="20" FixedLength="false" Unicode="false" Nullable="false" />
+          <Property Name="From_Date" Type="DateTime" Nullable="false" Precision="3" />
+          <Property Name="To_Date" Type="DateTime" Nullable="false" Precision="3" />
+          <Property Name="Cause_of_Absence_Code" Type="String" MaxLength="10" FixedLength="false" Unicode="false" Nullable="false" />
+          <Property Name="Description" Type="String" MaxLength="30" FixedLength="false" Unicode="false" Nullable="false" />
+          <Property Name="Quantity" Type="Decimal" Precision="38" Scale="20" Nullable="false" />
+          <Property Name="Unit_of_Measure_Code" Type="String" MaxLength="10" FixedLength="false" Unicode="false" Nullable="false" />
+          <Property Name="Quantity__Base_" Type="Decimal" Precision="38" Scale="20" Nullable="false" />
+          <Property Name="Qty__per_Unit_of_Measure" Type="Decimal" Precision="38" Scale="20" Nullable="false" />
+        </EntityType>
+        <EntityType Name="CRONUS_Sverige_AB_Employee_Portal_Setup">
+          <Key>
+            <PropertyRef Name="Primary_Key" />
+          </Key>
+          <Property Name="timestamp" Type="Binary" MaxLength="8" FixedLength="true" Nullable="false" annotation:StoreGeneratedPattern="Computed" />
+          <Property Name="Primary_Key" Type="String" MaxLength="10" FixedLength="false" Unicode="false" Nullable="false" />
+          <Property Name="Search_Limit" Type="Int32" Nullable="false" />
+          <Property Name="Temp__Key_Index" Type="Int32" Nullable="false" />
+          <Property Name="Temp__Table_No_" Type="Int32" Nullable="false" />
+          <Property Name="Temp__Key_String" Type="String" MaxLength="250" FixedLength="false" Unicode="false" Nullable="false" />
+          <Property Name="Temp__Option_Value" Type="Int32" Nullable="false" />
+          <Property Name="Temp__Option_Caption" Type="String" MaxLength="250" FixedLength="false" Unicode="false" Nullable="false" />
+          <Property Name="Temp__SharePoint_Site_Name" Type="String" MaxLength="250" FixedLength="false" Unicode="false" Nullable="false" />
+          <Property Name="Back_End_Public_Key" Type="Binary" MaxLength="Max" FixedLength="false" />
+          <Property Name="Back_End_Private_Key" Type="Binary" MaxLength="Max" FixedLength="false" />
+          <Property Name="Write_Debugging_Info_" Type="Byte" Nullable="false" />
+          <Property Name="Config_Tool_Pane_Caption_ID" Type="Int32" Nullable="false" />
+          <Property Name="Config_TP_WP_Request_Capt_ID" Type="Int32" Nullable="false" />
+          <Property Name="Config_TP_Initial_Req__Capt_ID" Type="Int32" Nullable="false" />
+          <Property Name="Config_TP_Group_Capt_ID" Type="Int32" Nullable="false" />
+          <Property Name="Search_Tool_Pane_Caption_ID" Type="Int32" Nullable="false" />
+          <Property Name="Search_Config_Table_ID" Type="Int32" Nullable="false" />
+          <Property Name="Search_TP_All_Tables_Capt_ID" Type="Int32" Nullable="false" />
+          <Property Name="Config_Tool_Pane_Caption" Type="String" MaxLength="80" FixedLength="false" Unicode="false" Nullable="false" />
+          <Property Name="Config_TP_WP_Request_Caption" Type="String" MaxLength="80" FixedLength="false" Unicode="false" Nullable="false" />
+          <Property Name="Config_TP_Initial_Req__Caption" Type="String" MaxLength="80" FixedLength="false" Unicode="false" Nullable="false" />
+          <Property Name="Config_TP_Group_Caption" Type="String" MaxLength="80" FixedLength="false" Unicode="false" Nullable="false" />
+          <Property Name="Search_Tool_Pane_Caption" Type="String" MaxLength="80" FixedLength="false" Unicode="false" Nullable="false" />
+          <Property Name="Search_Config_Table_Caption" Type="String" MaxLength="80" FixedLength="false" Unicode="false" Nullable="false" />
+          <Property Name="Search_TP_All_Tables_Caption" Type="String" MaxLength="80" FixedLength="false" Unicode="false" Nullable="false" />
+          <Property Name="Debugging_Path" Type="String" MaxLength="250" FixedLength="false" Unicode="false" Nullable="false" />
+        </EntityType>
+        <EntityType Name="CRONUS_Sverige_AB_Employee_Qualification">
+          <Key>
+            <PropertyRef Name="Employee_No_" />
+            <PropertyRef Name="Line_No_" />
+          </Key>
+          <Property Name="timestamp" Type="Binary" MaxLength="8" FixedLength="true" Nullable="false" annotation:StoreGeneratedPattern="Computed" />
+          <Property Name="Employee_No_" Type="String" MaxLength="20" FixedLength="false" Unicode="false" Nullable="false" />
+          <Property Name="Line_No_" Type="Int32" Nullable="false" />
+          <Property Name="Qualification_Code" Type="String" MaxLength="10" FixedLength="false" Unicode="false" Nullable="false" />
+          <Property Name="From_Date" Type="DateTime" Nullable="false" Precision="3" />
+          <Property Name="To_Date" Type="DateTime" Nullable="false" Precision="3" />
+          <Property Name="Type" Type="Int32" Nullable="false" />
+          <Property Name="Description" Type="String" MaxLength="30" FixedLength="false" Unicode="false" Nullable="false" />
+          <Property Name="Institution_Company" Type="String" MaxLength="30" FixedLength="false" Unicode="false" Nullable="false" />
+          <Property Name="Cost" Type="Decimal" Precision="38" Scale="20" Nullable="false" />
+          <Property Name="Course_Grade" Type="String" MaxLength="30" FixedLength="false" Unicode="false" Nullable="false" />
+          <Property Name="Employee_Status" Type="Int32" Nullable="false" />
+          <Property Name="Expiration_Date" Type="DateTime" Nullable="false" Precision="3" />
+        </EntityType>
+        <EntityType Name="CRONUS_Sverige_AB_Employee_Relative">
+          <Key>
+            <PropertyRef Name="Employee_No_" />
+            <PropertyRef Name="Line_No_" />
+          </Key>
+          <Property Name="timestamp" Type="Binary" MaxLength="8" FixedLength="true" Nullable="false" annotation:StoreGeneratedPattern="Computed" />
+          <Property Name="Employee_No_" Type="String" MaxLength="20" FixedLength="false" Unicode="false" Nullable="false" />
+          <Property Name="Line_No_" Type="Int32" Nullable="false" />
+          <Property Name="Relative_Code" Type="String" MaxLength="10" FixedLength="false" Unicode="false" Nullable="false" />
+          <Property Name="First_Name" Type="String" MaxLength="30" FixedLength="false" Unicode="false" Nullable="false" />
+          <Property Name="Middle_Name" Type="String" MaxLength="30" FixedLength="false" Unicode="false" Nullable="false" />
+          <Property Name="Last_Name" Type="String" MaxLength="30" FixedLength="false" Unicode="false" Nullable="false" />
+          <Property Name="Birth_Date" Type="DateTime" Nullable="false" Precision="3" />
+          <Property Name="Phone_No_" Type="String" MaxLength="30" FixedLength="false" Unicode="false" Nullable="false" />
+          <Property Name="Relative_s_Employee_No_" Type="String" MaxLength="20" FixedLength="false" Unicode="false" Nullable="false" />
+        </EntityType>
+        <EntityType Name="CRONUS_Sverige_AB_Employee_Statistics_Group">
+          <Key>
+            <PropertyRef Name="Code" />
+          </Key>
+          <Property Name="timestamp" Type="Binary" MaxLength="8" FixedLength="true" Nullable="false" annotation:StoreGeneratedPattern="Computed" />
+          <Property Name="Code" Type="String" MaxLength="10" FixedLength="false" Unicode="false" Nullable="false" />
+          <Property Name="Description" Type="String" MaxLength="30" FixedLength="false" Unicode="false" Nullable="false" />
+        </EntityType>
+        <EntityContainer Name="CronusEntities" annotation:LazyLoadingEnabled="true">
+          <EntitySet Name="CRONUS_Sverige_AB_Employee" EntityType="Self.CRONUS_Sverige_AB_Employee" />
+          <EntitySet Name="CRONUS_Sverige_AB_Employee_Absence" EntityType="Self.CRONUS_Sverige_AB_Employee_Absence" />
+          <EntitySet Name="CRONUS_Sverige_AB_Employee_Portal_Setup" EntityType="Self.CRONUS_Sverige_AB_Employee_Portal_Setup" />
+          <EntitySet Name="CRONUS_Sverige_AB_Employee_Qualification" EntityType="Self.CRONUS_Sverige_AB_Employee_Qualification" />
+          <EntitySet Name="CRONUS_Sverige_AB_Employee_Relative" EntityType="Self.CRONUS_Sverige_AB_Employee_Relative" />
+          <EntitySet Name="CRONUS_Sverige_AB_Employee_Statistics_Group" EntityType="Self.CRONUS_Sverige_AB_Employee_Statistics_Group" />
+        </EntityContainer>
+      </Schema>
+    </edmx:ConceptualModels>
+    <!-- C-S mapping content -->
+    <edmx:Mappings>
+      <Mapping Space="C-S" xmlns="http://schemas.microsoft.com/ado/2009/11/mapping/cs">
+        <EntityContainerMapping StorageEntityContainer="CronusModelStoreContainer" CdmEntityContainer="CronusEntities">
+          <EntitySetMapping Name="CRONUS_Sverige_AB_Employee">
+            <EntityTypeMapping TypeName="CronusModel.CRONUS_Sverige_AB_Employee">
+              <MappingFragment StoreEntitySet="CRONUS Sverige AB$Employee">
+                <ScalarProperty Name="timestamp" ColumnName="timestamp" />
+                <ScalarProperty Name="No_" ColumnName="No_" />
+                <ScalarProperty Name="First_Name" ColumnName="First Name" />
+                <ScalarProperty Name="Middle_Name" ColumnName="Middle Name" />
+                <ScalarProperty Name="Last_Name" ColumnName="Last Name" />
+                <ScalarProperty Name="Initials" ColumnName="Initials" />
+                <ScalarProperty Name="Job_Title" ColumnName="Job Title" />
+                <ScalarProperty Name="Search_Name" ColumnName="Search Name" />
+                <ScalarProperty Name="Address" ColumnName="Address" />
+                <ScalarProperty Name="Address_2" ColumnName="Address 2" />
+                <ScalarProperty Name="City" ColumnName="City" />
+                <ScalarProperty Name="Post_Code" ColumnName="Post Code" />
+                <ScalarProperty Name="County" ColumnName="County" />
+                <ScalarProperty Name="Phone_No_" ColumnName="Phone No_" />
+                <ScalarProperty Name="Mobile_Phone_No_" ColumnName="Mobile Phone No_" />
+                <ScalarProperty Name="E_Mail" ColumnName="E-Mail" />
+                <ScalarProperty Name="Alt__Address_Code" ColumnName="Alt_ Address Code" />
+                <ScalarProperty Name="Alt__Address_Start_Date" ColumnName="Alt_ Address Start Date" />
+                <ScalarProperty Name="Alt__Address_End_Date" ColumnName="Alt_ Address End Date" />
+                <ScalarProperty Name="Picture" ColumnName="Picture" />
+                <ScalarProperty Name="Birth_Date" ColumnName="Birth Date" />
+                <ScalarProperty Name="Social_Security_No_" ColumnName="Social Security No_" />
+                <ScalarProperty Name="Union_Code" ColumnName="Union Code" />
+                <ScalarProperty Name="Union_Membership_No_" ColumnName="Union Membership No_" />
+                <ScalarProperty Name="Sex" ColumnName="Sex" />
+                <ScalarProperty Name="Country_Region_Code" ColumnName="Country_Region Code" />
+                <ScalarProperty Name="Manager_No_" ColumnName="Manager No_" />
+                <ScalarProperty Name="Emplymt__Contract_Code" ColumnName="Emplymt_ Contract Code" />
+                <ScalarProperty Name="Statistics_Group_Code" ColumnName="Statistics Group Code" />
+                <ScalarProperty Name="Employment_Date" ColumnName="Employment Date" />
+                <ScalarProperty Name="Status" ColumnName="Status" />
+                <ScalarProperty Name="Inactive_Date" ColumnName="Inactive Date" />
+                <ScalarProperty Name="Cause_of_Inactivity_Code" ColumnName="Cause of Inactivity Code" />
+                <ScalarProperty Name="Termination_Date" ColumnName="Termination Date" />
+                <ScalarProperty Name="Grounds_for_Term__Code" ColumnName="Grounds for Term_ Code" />
+                <ScalarProperty Name="Global_Dimension_1_Code" ColumnName="Global Dimension 1 Code" />
+                <ScalarProperty Name="Global_Dimension_2_Code" ColumnName="Global Dimension 2 Code" />
+                <ScalarProperty Name="Resource_No_" ColumnName="Resource No_" />
+                <ScalarProperty Name="Last_Date_Modified" ColumnName="Last Date Modified" />
+                <ScalarProperty Name="Extension" ColumnName="Extension" />
+                <ScalarProperty Name="Pager" ColumnName="Pager" />
+                <ScalarProperty Name="Fax_No_" ColumnName="Fax No_" />
+                <ScalarProperty Name="Company_E_Mail" ColumnName="Company E-Mail" />
+                <ScalarProperty Name="Title" ColumnName="Title" />
+                <ScalarProperty Name="Salespers__Purch__Code" ColumnName="Salespers__Purch_ Code" />
+                <ScalarProperty Name="No__Series" ColumnName="No_ Series" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="CRONUS_Sverige_AB_Employee_Absence">
+            <EntityTypeMapping TypeName="CronusModel.CRONUS_Sverige_AB_Employee_Absence">
+              <MappingFragment StoreEntitySet="CRONUS Sverige AB$Employee Absence">
+                <ScalarProperty Name="timestamp" ColumnName="timestamp" />
+                <ScalarProperty Name="Entry_No_" ColumnName="Entry No_" />
+                <ScalarProperty Name="Employee_No_" ColumnName="Employee No_" />
+                <ScalarProperty Name="From_Date" ColumnName="From Date" />
+                <ScalarProperty Name="To_Date" ColumnName="To Date" />
+                <ScalarProperty Name="Cause_of_Absence_Code" ColumnName="Cause of Absence Code" />
+                <ScalarProperty Name="Description" ColumnName="Description" />
+                <ScalarProperty Name="Quantity" ColumnName="Quantity" />
+                <ScalarProperty Name="Unit_of_Measure_Code" ColumnName="Unit of Measure Code" />
+                <ScalarProperty Name="Quantity__Base_" ColumnName="Quantity (Base)" />
+                <ScalarProperty Name="Qty__per_Unit_of_Measure" ColumnName="Qty_ per Unit of Measure" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="CRONUS_Sverige_AB_Employee_Portal_Setup">
+            <EntityTypeMapping TypeName="CronusModel.CRONUS_Sverige_AB_Employee_Portal_Setup">
+              <MappingFragment StoreEntitySet="CRONUS Sverige AB$Employee Portal Setup">
+                <ScalarProperty Name="timestamp" ColumnName="timestamp" />
+                <ScalarProperty Name="Primary_Key" ColumnName="Primary Key" />
+                <ScalarProperty Name="Search_Limit" ColumnName="Search Limit" />
+                <ScalarProperty Name="Temp__Key_Index" ColumnName="Temp_ Key Index" />
+                <ScalarProperty Name="Temp__Table_No_" ColumnName="Temp_ Table No_" />
+                <ScalarProperty Name="Temp__Key_String" ColumnName="Temp_ Key String" />
+                <ScalarProperty Name="Temp__Option_Value" ColumnName="Temp_ Option Value" />
+                <ScalarProperty Name="Temp__Option_Caption" ColumnName="Temp_ Option Caption" />
+                <ScalarProperty Name="Temp__SharePoint_Site_Name" ColumnName="Temp_ SharePoint Site Name" />
+                <ScalarProperty Name="Back_End_Public_Key" ColumnName="Back End Public Key" />
+                <ScalarProperty Name="Back_End_Private_Key" ColumnName="Back End Private Key" />
+                <ScalarProperty Name="Write_Debugging_Info_" ColumnName="Write Debugging Info_" />
+                <ScalarProperty Name="Config_Tool_Pane_Caption_ID" ColumnName="Config Tool Pane Caption ID" />
+                <ScalarProperty Name="Config_TP_WP_Request_Capt_ID" ColumnName="Config TP WP Request Capt ID" />
+                <ScalarProperty Name="Config_TP_Initial_Req__Capt_ID" ColumnName="Config TP Initial Req_ Capt ID" />
+                <ScalarProperty Name="Config_TP_Group_Capt_ID" ColumnName="Config TP Group Capt ID" />
+                <ScalarProperty Name="Search_Tool_Pane_Caption_ID" ColumnName="Search Tool Pane Caption ID" />
+                <ScalarProperty Name="Search_Config_Table_ID" ColumnName="Search Config Table ID" />
+                <ScalarProperty Name="Search_TP_All_Tables_Capt_ID" ColumnName="Search TP All Tables Capt ID" />
+                <ScalarProperty Name="Config_Tool_Pane_Caption" ColumnName="Config Tool Pane Caption" />
+                <ScalarProperty Name="Config_TP_WP_Request_Caption" ColumnName="Config TP WP Request Caption" />
+                <ScalarProperty Name="Config_TP_Initial_Req__Caption" ColumnName="Config TP Initial Req_ Caption" />
+                <ScalarProperty Name="Config_TP_Group_Caption" ColumnName="Config TP Group Caption" />
+                <ScalarProperty Name="Search_Tool_Pane_Caption" ColumnName="Search Tool Pane Caption" />
+                <ScalarProperty Name="Search_Config_Table_Caption" ColumnName="Search Config Table Caption" />
+                <ScalarProperty Name="Search_TP_All_Tables_Caption" ColumnName="Search TP All Tables Caption" />
+                <ScalarProperty Name="Debugging_Path" ColumnName="Debugging Path" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="CRONUS_Sverige_AB_Employee_Qualification">
+            <EntityTypeMapping TypeName="CronusModel.CRONUS_Sverige_AB_Employee_Qualification">
+              <MappingFragment StoreEntitySet="CRONUS Sverige AB$Employee Qualification">
+                <ScalarProperty Name="timestamp" ColumnName="timestamp" />
+                <ScalarProperty Name="Employee_No_" ColumnName="Employee No_" />
+                <ScalarProperty Name="Line_No_" ColumnName="Line No_" />
+                <ScalarProperty Name="Qualification_Code" ColumnName="Qualification Code" />
+                <ScalarProperty Name="From_Date" ColumnName="From Date" />
+                <ScalarProperty Name="To_Date" ColumnName="To Date" />
+                <ScalarProperty Name="Type" ColumnName="Type" />
+                <ScalarProperty Name="Description" ColumnName="Description" />
+                <ScalarProperty Name="Institution_Company" ColumnName="Institution_Company" />
+                <ScalarProperty Name="Cost" ColumnName="Cost" />
+                <ScalarProperty Name="Course_Grade" ColumnName="Course Grade" />
+                <ScalarProperty Name="Employee_Status" ColumnName="Employee Status" />
+                <ScalarProperty Name="Expiration_Date" ColumnName="Expiration Date" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="CRONUS_Sverige_AB_Employee_Relative">
+            <EntityTypeMapping TypeName="CronusModel.CRONUS_Sverige_AB_Employee_Relative">
+              <MappingFragment StoreEntitySet="CRONUS Sverige AB$Employee Relative">
+                <ScalarProperty Name="timestamp" ColumnName="timestamp" />
+                <ScalarProperty Name="Employee_No_" ColumnName="Employee No_" />
+                <ScalarProperty Name="Line_No_" ColumnName="Line No_" />
+                <ScalarProperty Name="Relative_Code" ColumnName="Relative Code" />
+                <ScalarProperty Name="First_Name" ColumnName="First Name" />
+                <ScalarProperty Name="Middle_Name" ColumnName="Middle Name" />
+                <ScalarProperty Name="Last_Name" ColumnName="Last Name" />
+                <ScalarProperty Name="Birth_Date" ColumnName="Birth Date" />
+                <ScalarProperty Name="Phone_No_" ColumnName="Phone No_" />
+                <ScalarProperty Name="Relative_s_Employee_No_" ColumnName="Relative_s Employee No_" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="CRONUS_Sverige_AB_Employee_Statistics_Group">
+            <EntityTypeMapping TypeName="CronusModel.CRONUS_Sverige_AB_Employee_Statistics_Group">
+              <MappingFragment StoreEntitySet="CRONUS Sverige AB$Employee Statistics Group">
+                <ScalarProperty Name="timestamp" ColumnName="timestamp" />
+                <ScalarProperty Name="Code" ColumnName="Code" />
+                <ScalarProperty Name="Description" ColumnName="Description" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+        </EntityContainerMapping>
+      </Mapping>
+    </edmx:Mappings>
+  </edmx:Runtime>
+  <!-- EF Designer content (DO NOT EDIT MANUALLY BELOW HERE) -->
+  <Designer xmlns="http://schemas.microsoft.com/ado/2009/11/edmx">
+    <Connection>
+      <DesignerInfoPropertySet>
+        <DesignerProperty Name="MetadataArtifactProcessing" Value="EmbedInOutputAssembly" />
+      </DesignerInfoPropertySet>
+    </Connection>
+    <Options>
+      <DesignerInfoPropertySet>
+        <DesignerProperty Name="ValidateOnBuild" Value="true" />
+        <DesignerProperty Name="EnablePluralization" Value="true" />
+        <DesignerProperty Name="IncludeForeignKeysInModel" Value="true" />
+        <DesignerProperty Name="UseLegacyProvider" Value="false" />
+        <DesignerProperty Name="CodeGenerationStrategy" Value="None" />
+      </DesignerInfoPropertySet>
+    </Options>
+    <!-- Diagram content (shape and connector positions) -->
+    <Diagrams></Diagrams>
+  </Designer>
+</edmx:Edmx>

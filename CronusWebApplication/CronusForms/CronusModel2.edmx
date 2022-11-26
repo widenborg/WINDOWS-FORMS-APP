@@ -1,0 +1,202 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<edmx:Edmx Version="3.0" xmlns:edmx="http://schemas.microsoft.com/ado/2009/11/edmx">
+  <!-- EF Runtime content -->
+  <edmx:Runtime>
+    <!-- SSDL content -->
+    <edmx:StorageModels>
+      <Schema Namespace="CronusModel.Store" Provider="System.Data.SqlClient" ProviderManifestToken="2012" Alias="Self" xmlns:store="http://schemas.microsoft.com/ado/2007/12/edm/EntityStoreSchemaGenerator" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm/ssdl">
+        <EntityType Name="CRONUS Sverige AB$Employee">
+          <Key>
+            <PropertyRef Name="No_" />
+          </Key>
+          <Property Name="timestamp" Type="timestamp" StoreGeneratedPattern="Computed" Nullable="false" />
+          <Property Name="No_" Type="varchar" MaxLength="20" Nullable="false" />
+          <Property Name="First Name" Type="varchar" MaxLength="30" Nullable="false" />
+          <Property Name="Middle Name" Type="varchar" MaxLength="30" Nullable="false" />
+          <Property Name="Last Name" Type="varchar" MaxLength="30" Nullable="false" />
+          <Property Name="Initials" Type="varchar" MaxLength="30" Nullable="false" />
+          <Property Name="Job Title" Type="varchar" MaxLength="30" Nullable="false" />
+          <Property Name="Search Name" Type="varchar" MaxLength="30" Nullable="false" />
+          <Property Name="Address" Type="varchar" MaxLength="50" Nullable="false" />
+          <Property Name="Address 2" Type="varchar" MaxLength="50" Nullable="false" />
+          <Property Name="City" Type="varchar" MaxLength="30" Nullable="false" />
+          <Property Name="Post Code" Type="varchar" MaxLength="20" Nullable="false" />
+          <Property Name="County" Type="varchar" MaxLength="30" Nullable="false" />
+          <Property Name="Phone No_" Type="varchar" MaxLength="30" Nullable="false" />
+          <Property Name="Mobile Phone No_" Type="varchar" MaxLength="30" Nullable="false" />
+          <Property Name="E-Mail" Type="varchar" MaxLength="80" Nullable="false" />
+          <Property Name="Alt_ Address Code" Type="varchar" MaxLength="10" Nullable="false" />
+          <Property Name="Alt_ Address Start Date" Type="datetime" Nullable="false" />
+          <Property Name="Alt_ Address End Date" Type="datetime" Nullable="false" />
+          <Property Name="Picture" Type="image" />
+          <Property Name="Birth Date" Type="datetime" Nullable="false" />
+          <Property Name="Social Security No_" Type="varchar" MaxLength="30" Nullable="false" />
+          <Property Name="Union Code" Type="varchar" MaxLength="10" Nullable="false" />
+          <Property Name="Union Membership No_" Type="varchar" MaxLength="30" Nullable="false" />
+          <Property Name="Sex" Type="int" Nullable="false" />
+          <Property Name="Country_Region Code" Type="varchar" MaxLength="10" Nullable="false" />
+          <Property Name="Manager No_" Type="varchar" MaxLength="20" Nullable="false" />
+          <Property Name="Emplymt_ Contract Code" Type="varchar" MaxLength="10" Nullable="false" />
+          <Property Name="Statistics Group Code" Type="varchar" MaxLength="10" Nullable="false" />
+          <Property Name="Employment Date" Type="datetime" Nullable="false" />
+          <Property Name="Status" Type="int" Nullable="false" />
+          <Property Name="Inactive Date" Type="datetime" Nullable="false" />
+          <Property Name="Cause of Inactivity Code" Type="varchar" MaxLength="10" Nullable="false" />
+          <Property Name="Termination Date" Type="datetime" Nullable="false" />
+          <Property Name="Grounds for Term_ Code" Type="varchar" MaxLength="10" Nullable="false" />
+          <Property Name="Global Dimension 1 Code" Type="varchar" MaxLength="20" Nullable="false" />
+          <Property Name="Global Dimension 2 Code" Type="varchar" MaxLength="20" Nullable="false" />
+          <Property Name="Resource No_" Type="varchar" MaxLength="20" Nullable="false" />
+          <Property Name="Last Date Modified" Type="datetime" Nullable="false" />
+          <Property Name="Extension" Type="varchar" MaxLength="30" Nullable="false" />
+          <Property Name="Pager" Type="varchar" MaxLength="30" Nullable="false" />
+          <Property Name="Fax No_" Type="varchar" MaxLength="30" Nullable="false" />
+          <Property Name="Company E-Mail" Type="varchar" MaxLength="80" Nullable="false" />
+          <Property Name="Title" Type="varchar" MaxLength="30" Nullable="false" />
+          <Property Name="Salespers__Purch_ Code" Type="varchar" MaxLength="10" Nullable="false" />
+          <Property Name="No_ Series" Type="varchar" MaxLength="10" Nullable="false" />
+        </EntityType>
+        <EntityContainer Name="CronusModelStoreContainer">
+          <EntitySet Name="CRONUS Sverige AB$Employee" EntityType="Self.CRONUS Sverige AB$Employee" Schema="dbo" store:Type="Tables" />
+        </EntityContainer>
+      </Schema>
+    </edmx:StorageModels>
+    <!-- CSDL content -->
+    <edmx:ConceptualModels>
+      <Schema Namespace="CronusModel" Alias="Self" annotation:UseStrongSpatialTypes="false" xmlns:annotation="http://schemas.microsoft.com/ado/2009/02/edm/annotation" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm">
+        <EntityType Name="CRONUS_Sverige_AB_Employee">
+          <Key>
+            <PropertyRef Name="No_" />
+          </Key>
+          <Property Name="timestamp" Type="Binary" MaxLength="8" FixedLength="true" Nullable="false" annotation:StoreGeneratedPattern="Computed" />
+          <Property Name="No_" Type="String" MaxLength="20" FixedLength="false" Unicode="false" Nullable="false" />
+          <Property Name="First_Name" Type="String" MaxLength="30" FixedLength="false" Unicode="false" Nullable="false" />
+          <Property Name="Middle_Name" Type="String" MaxLength="30" FixedLength="false" Unicode="false" Nullable="false" />
+          <Property Name="Last_Name" Type="String" MaxLength="30" FixedLength="false" Unicode="false" Nullable="false" />
+          <Property Name="Initials" Type="String" MaxLength="30" FixedLength="false" Unicode="false" Nullable="false" />
+          <Property Name="Job_Title" Type="String" MaxLength="30" FixedLength="false" Unicode="false" Nullable="false" />
+          <Property Name="Search_Name" Type="String" MaxLength="30" FixedLength="false" Unicode="false" Nullable="false" />
+          <Property Name="Address" Type="String" MaxLength="50" FixedLength="false" Unicode="false" Nullable="false" />
+          <Property Name="Address_2" Type="String" MaxLength="50" FixedLength="false" Unicode="false" Nullable="false" />
+          <Property Name="City" Type="String" MaxLength="30" FixedLength="false" Unicode="false" Nullable="false" />
+          <Property Name="Post_Code" Type="String" MaxLength="20" FixedLength="false" Unicode="false" Nullable="false" />
+          <Property Name="County" Type="String" MaxLength="30" FixedLength="false" Unicode="false" Nullable="false" />
+          <Property Name="Phone_No_" Type="String" MaxLength="30" FixedLength="false" Unicode="false" Nullable="false" />
+          <Property Name="Mobile_Phone_No_" Type="String" MaxLength="30" FixedLength="false" Unicode="false" Nullable="false" />
+          <Property Name="E_Mail" Type="String" MaxLength="80" FixedLength="false" Unicode="false" Nullable="false" />
+          <Property Name="Alt__Address_Code" Type="String" MaxLength="10" FixedLength="false" Unicode="false" Nullable="false" />
+          <Property Name="Alt__Address_Start_Date" Type="DateTime" Nullable="false" Precision="3" />
+          <Property Name="Alt__Address_End_Date" Type="DateTime" Nullable="false" Precision="3" />
+          <Property Name="Picture" Type="Binary" MaxLength="Max" FixedLength="false" />
+          <Property Name="Birth_Date" Type="DateTime" Nullable="false" Precision="3" />
+          <Property Name="Social_Security_No_" Type="String" MaxLength="30" FixedLength="false" Unicode="false" Nullable="false" />
+          <Property Name="Union_Code" Type="String" MaxLength="10" FixedLength="false" Unicode="false" Nullable="false" />
+          <Property Name="Union_Membership_No_" Type="String" MaxLength="30" FixedLength="false" Unicode="false" Nullable="false" />
+          <Property Name="Sex" Type="Int32" Nullable="false" />
+          <Property Name="Country_Region_Code" Type="String" MaxLength="10" FixedLength="false" Unicode="false" Nullable="false" />
+          <Property Name="Manager_No_" Type="String" MaxLength="20" FixedLength="false" Unicode="false" Nullable="false" />
+          <Property Name="Emplymt__Contract_Code" Type="String" MaxLength="10" FixedLength="false" Unicode="false" Nullable="false" />
+          <Property Name="Statistics_Group_Code" Type="String" MaxLength="10" FixedLength="false" Unicode="false" Nullable="false" />
+          <Property Name="Employment_Date" Type="DateTime" Nullable="false" Precision="3" />
+          <Property Name="Status" Type="Int32" Nullable="false" />
+          <Property Name="Inactive_Date" Type="DateTime" Nullable="false" Precision="3" />
+          <Property Name="Cause_of_Inactivity_Code" Type="String" MaxLength="10" FixedLength="false" Unicode="false" Nullable="false" />
+          <Property Name="Termination_Date" Type="DateTime" Nullable="false" Precision="3" />
+          <Property Name="Grounds_for_Term__Code" Type="String" MaxLength="10" FixedLength="false" Unicode="false" Nullable="false" />
+          <Property Name="Global_Dimension_1_Code" Type="String" MaxLength="20" FixedLength="false" Unicode="false" Nullable="false" />
+          <Property Name="Global_Dimension_2_Code" Type="String" MaxLength="20" FixedLength="false" Unicode="false" Nullable="false" />
+          <Property Name="Resource_No_" Type="String" MaxLength="20" FixedLength="false" Unicode="false" Nullable="false" />
+          <Property Name="Last_Date_Modified" Type="DateTime" Nullable="false" Precision="3" />
+          <Property Name="Extension" Type="String" MaxLength="30" FixedLength="false" Unicode="false" Nullable="false" />
+          <Property Name="Pager" Type="String" MaxLength="30" FixedLength="false" Unicode="false" Nullable="false" />
+          <Property Name="Fax_No_" Type="String" MaxLength="30" FixedLength="false" Unicode="false" Nullable="false" />
+          <Property Name="Company_E_Mail" Type="String" MaxLength="80" FixedLength="false" Unicode="false" Nullable="false" />
+          <Property Name="Title" Type="String" MaxLength="30" FixedLength="false" Unicode="false" Nullable="false" />
+          <Property Name="Salespers__Purch__Code" Type="String" MaxLength="10" FixedLength="false" Unicode="false" Nullable="false" />
+          <Property Name="No__Series" Type="String" MaxLength="10" FixedLength="false" Unicode="false" Nullable="false" />
+        </EntityType>
+        <EntityContainer Name="CronusEntities" annotation:LazyLoadingEnabled="true">
+          <EntitySet Name="CRONUS_Sverige_AB_Employee" EntityType="Self.CRONUS_Sverige_AB_Employee" />
+        </EntityContainer>
+      </Schema>
+    </edmx:ConceptualModels>
+    <!-- C-S mapping content -->
+    <edmx:Mappings>
+      <Mapping Space="C-S" xmlns="http://schemas.microsoft.com/ado/2009/11/mapping/cs">
+        <EntityContainerMapping StorageEntityContainer="CronusModelStoreContainer" CdmEntityContainer="CronusEntities">
+          <EntitySetMapping Name="CRONUS_Sverige_AB_Employee">
+            <EntityTypeMapping TypeName="CronusModel.CRONUS_Sverige_AB_Employee">
+              <MappingFragment StoreEntitySet="CRONUS Sverige AB$Employee">
+                <ScalarProperty Name="timestamp" ColumnName="timestamp" />
+                <ScalarProperty Name="No_" ColumnName="No_" />
+                <ScalarProperty Name="First_Name" ColumnName="First Name" />
+                <ScalarProperty Name="Middle_Name" ColumnName="Middle Name" />
+                <ScalarProperty Name="Last_Name" ColumnName="Last Name" />
+                <ScalarProperty Name="Initials" ColumnName="Initials" />
+                <ScalarProperty Name="Job_Title" ColumnName="Job Title" />
+                <ScalarProperty Name="Search_Name" ColumnName="Search Name" />
+                <ScalarProperty Name="Address" ColumnName="Address" />
+                <ScalarProperty Name="Address_2" ColumnName="Address 2" />
+                <ScalarProperty Name="City" ColumnName="City" />
+                <ScalarProperty Name="Post_Code" ColumnName="Post Code" />
+                <ScalarProperty Name="County" ColumnName="County" />
+                <ScalarProperty Name="Phone_No_" ColumnName="Phone No_" />
+                <ScalarProperty Name="Mobile_Phone_No_" ColumnName="Mobile Phone No_" />
+                <ScalarProperty Name="E_Mail" ColumnName="E-Mail" />
+                <ScalarProperty Name="Alt__Address_Code" ColumnName="Alt_ Address Code" />
+                <ScalarProperty Name="Alt__Address_Start_Date" ColumnName="Alt_ Address Start Date" />
+                <ScalarProperty Name="Alt__Address_End_Date" ColumnName="Alt_ Address End Date" />
+                <ScalarProperty Name="Picture" ColumnName="Picture" />
+                <ScalarProperty Name="Birth_Date" ColumnName="Birth Date" />
+                <ScalarProperty Name="Social_Security_No_" ColumnName="Social Security No_" />
+                <ScalarProperty Name="Union_Code" ColumnName="Union Code" />
+                <ScalarProperty Name="Union_Membership_No_" ColumnName="Union Membership No_" />
+                <ScalarProperty Name="Sex" ColumnName="Sex" />
+                <ScalarProperty Name="Country_Region_Code" ColumnName="Country_Region Code" />
+                <ScalarProperty Name="Manager_No_" ColumnName="Manager No_" />
+                <ScalarProperty Name="Emplymt__Contract_Code" ColumnName="Emplymt_ Contract Code" />
+                <ScalarProperty Name="Statistics_Group_Code" ColumnName="Statistics Group Code" />
+                <ScalarProperty Name="Employment_Date" ColumnName="Employment Date" />
+                <ScalarProperty Name="Status" ColumnName="Status" />
+                <ScalarProperty Name="Inactive_Date" ColumnName="Inactive Date" />
+                <ScalarProperty Name="Cause_of_Inactivity_Code" ColumnName="Cause of Inactivity Code" />
+                <ScalarProperty Name="Termination_Date" ColumnName="Termination Date" />
+                <ScalarProperty Name="Grounds_for_Term__Code" ColumnName="Grounds for Term_ Code" />
+                <ScalarProperty Name="Global_Dimension_1_Code" ColumnName="Global Dimension 1 Code" />
+                <ScalarProperty Name="Global_Dimension_2_Code" ColumnName="Global Dimension 2 Code" />
+                <ScalarProperty Name="Resource_No_" ColumnName="Resource No_" />
+                <ScalarProperty Name="Last_Date_Modified" ColumnName="Last Date Modified" />
+                <ScalarProperty Name="Extension" ColumnName="Extension" />
+                <ScalarProperty Name="Pager" ColumnName="Pager" />
+                <ScalarProperty Name="Fax_No_" ColumnName="Fax No_" />
+                <ScalarProperty Name="Company_E_Mail" ColumnName="Company E-Mail" />
+                <ScalarProperty Name="Title" ColumnName="Title" />
+                <ScalarProperty Name="Salespers__Purch__Code" ColumnName="Salespers__Purch_ Code" />
+                <ScalarProperty Name="No__Series" ColumnName="No_ Series" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+        </EntityContainerMapping>
+      </Mapping>
+    </edmx:Mappings>
+  </edmx:Runtime>
+  <!-- EF Designer content (DO NOT EDIT MANUALLY BELOW HERE) -->
+  <Designer xmlns="http://schemas.microsoft.com/ado/2009/11/edmx">
+    <Connection>
+      <DesignerInfoPropertySet>
+        <DesignerProperty Name="MetadataArtifactProcessing" Value="EmbedInOutputAssembly" />
+      </DesignerInfoPropertySet>
+    </Connection>
+    <Options>
+      <DesignerInfoPropertySet>
+        <DesignerProperty Name="ValidateOnBuild" Value="true" />
+        <DesignerProperty Name="EnablePluralization" Value="true" />
+        <DesignerProperty Name="IncludeForeignKeysInModel" Value="true" />
+        <DesignerProperty Name="UseLegacyProvider" Value="false" />
+        <DesignerProperty Name="CodeGenerationStrategy" Value="None" />
+      </DesignerInfoPropertySet>
+    </Options>
+    <!-- Diagram content (shape and connector positions) -->
+    <Diagrams></Diagrams>
+  </Designer>
+</edmx:Edmx>

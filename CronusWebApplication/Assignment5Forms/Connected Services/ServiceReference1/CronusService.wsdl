@@ -1,0 +1,946 @@
+<?xml version="1.0" encoding="utf-8"?>
+<wsdl:definitions xmlns:soap12="http://schemas.xmlsoap.org/wsdl/soap12/" xmlns:s="http://www.w3.org/2001/XMLSchema" xmlns:tm="http://microsoft.com/wsdl/mime/textMatching/" xmlns:soapenc="http://schemas.xmlsoap.org/soap/encoding/" xmlns:http="http://schemas.xmlsoap.org/wsdl/http/" xmlns:tns="http://tempuri.org/" xmlns:mime="http://schemas.xmlsoap.org/wsdl/mime/" xmlns:soap="http://schemas.xmlsoap.org/wsdl/soap/" targetNamespace="http://tempuri.org/" xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">
+  <wsdl:types>
+    <s:schema elementFormDefault="qualified" targetNamespace="http://tempuri.org/">
+      <s:element name="ReadEmployeeAndRelatedTables">
+        <s:complexType />
+      </s:element>
+      <s:element name="ReadEmployeeAndRelatedTablesResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="ReadEmployeeAndRelatedTablesResult">
+              <s:complexType>
+                <s:sequence>
+                  <s:element ref="s:schema" />
+                  <s:any />
+                </s:sequence>
+              </s:complexType>
+            </s:element>
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="ReadEmployeesAndRelatives">
+        <s:complexType />
+      </s:element>
+      <s:element name="ReadEmployeesAndRelativesResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="ReadEmployeesAndRelativesResult">
+              <s:complexType>
+                <s:sequence>
+                  <s:element ref="s:schema" />
+                  <s:any />
+                </s:sequence>
+              </s:complexType>
+            </s:element>
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="ReadAllSickEmployees2004">
+        <s:complexType />
+      </s:element>
+      <s:element name="ReadAllSickEmployees2004Response">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="ReadAllSickEmployees2004Result">
+              <s:complexType>
+                <s:sequence>
+                  <s:element ref="s:schema" />
+                  <s:any />
+                </s:sequence>
+              </s:complexType>
+            </s:element>
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="ReadHighestAbsence">
+        <s:complexType />
+      </s:element>
+      <s:element name="ReadHighestAbsenceResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="ReadHighestAbsenceResult">
+              <s:complexType>
+                <s:sequence>
+                  <s:element ref="s:schema" />
+                  <s:any />
+                </s:sequence>
+              </s:complexType>
+            </s:element>
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="ReadAllKeys">
+        <s:complexType />
+      </s:element>
+      <s:element name="ReadAllKeysResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="ReadAllKeysResult">
+              <s:complexType>
+                <s:sequence>
+                  <s:element ref="s:schema" />
+                  <s:any />
+                </s:sequence>
+              </s:complexType>
+            </s:element>
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="ReadAllIndexes">
+        <s:complexType />
+      </s:element>
+      <s:element name="ReadAllIndexesResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="ReadAllIndexesResult">
+              <s:complexType>
+                <s:sequence>
+                  <s:element ref="s:schema" />
+                  <s:any />
+                </s:sequence>
+              </s:complexType>
+            </s:element>
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="ReadAllConstraints">
+        <s:complexType />
+      </s:element>
+      <s:element name="ReadAllConstraintsResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="ReadAllConstraintsResult">
+              <s:complexType>
+                <s:sequence>
+                  <s:element ref="s:schema" />
+                  <s:any />
+                </s:sequence>
+              </s:complexType>
+            </s:element>
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="ReadAllTables1">
+        <s:complexType />
+      </s:element>
+      <s:element name="ReadAllTables1Response">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="ReadAllTables1Result">
+              <s:complexType>
+                <s:sequence>
+                  <s:element ref="s:schema" />
+                  <s:any />
+                </s:sequence>
+              </s:complexType>
+            </s:element>
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="ReadAllTables2">
+        <s:complexType />
+      </s:element>
+      <s:element name="ReadAllTables2Response">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="ReadAllTables2Result">
+              <s:complexType>
+                <s:sequence>
+                  <s:element ref="s:schema" />
+                  <s:any />
+                </s:sequence>
+              </s:complexType>
+            </s:element>
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="ReadEmployeeColumns1">
+        <s:complexType />
+      </s:element>
+      <s:element name="ReadEmployeeColumns1Response">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="ReadEmployeeColumns1Result">
+              <s:complexType>
+                <s:sequence>
+                  <s:element ref="s:schema" />
+                  <s:any />
+                </s:sequence>
+              </s:complexType>
+            </s:element>
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="ReadEmployeeColumns2">
+        <s:complexType />
+      </s:element>
+      <s:element name="ReadEmployeeColumns2Response">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="ReadEmployeeColumns2Result">
+              <s:complexType>
+                <s:sequence>
+                  <s:element ref="s:schema" />
+                  <s:any />
+                </s:sequence>
+              </s:complexType>
+            </s:element>
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="ReadEmployeeAndRelatedTablesJava">
+        <s:complexType />
+      </s:element>
+      <s:element name="ReadEmployeeAndRelatedTablesJavaResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="ReadEmployeeAndRelatedTablesJavaResult" type="tns:ArrayOfArrayOfString" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:complexType name="ArrayOfArrayOfString">
+        <s:sequence>
+          <s:element minOccurs="0" maxOccurs="unbounded" name="ArrayOfString" nillable="true" type="tns:ArrayOfString" />
+        </s:sequence>
+      </s:complexType>
+      <s:complexType name="ArrayOfString">
+        <s:sequence>
+          <s:element minOccurs="0" maxOccurs="unbounded" name="string" nillable="true" type="s:string" />
+        </s:sequence>
+      </s:complexType>
+      <s:element name="ReadEmployeesAndRelativesJava">
+        <s:complexType />
+      </s:element>
+      <s:element name="ReadEmployeesAndRelativesJavaResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="ReadEmployeesAndRelativesJavaResult" type="tns:ArrayOfArrayOfString" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="ReadAllSickEmployees2004Java">
+        <s:complexType />
+      </s:element>
+      <s:element name="ReadAllSickEmployees2004JavaResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="ReadAllSickEmployees2004JavaResult" type="tns:ArrayOfArrayOfString" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="ReadHighestAbsenceJava">
+        <s:complexType />
+      </s:element>
+      <s:element name="ReadHighestAbsenceJavaResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="ReadHighestAbsenceJavaResult" type="tns:ArrayOfArrayOfString" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="ReadAllKeysJava">
+        <s:complexType />
+      </s:element>
+      <s:element name="ReadAllKeysJavaResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="ReadAllKeysJavaResult" type="tns:ArrayOfArrayOfString" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="ReadAllIndexesJava">
+        <s:complexType />
+      </s:element>
+      <s:element name="ReadAllIndexesJavaResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="ReadAllIndexesJavaResult" type="tns:ArrayOfArrayOfString" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="ReadAllTableConstraintsJava">
+        <s:complexType />
+      </s:element>
+      <s:element name="ReadAllTableConstraintsJavaResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="ReadAllTableConstraintsJavaResult" type="tns:ArrayOfArrayOfString" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="ReadAllTables1Java">
+        <s:complexType />
+      </s:element>
+      <s:element name="ReadAllTables1JavaResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="ReadAllTables1JavaResult" type="tns:ArrayOfArrayOfString" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="ReadAllTables2Java">
+        <s:complexType />
+      </s:element>
+      <s:element name="ReadAllTables2JavaResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="ReadAllTables2JavaResult" type="tns:ArrayOfArrayOfString" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="ReadEmployeeColumns1Java">
+        <s:complexType />
+      </s:element>
+      <s:element name="ReadEmployeeColumns1JavaResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="ReadEmployeeColumns1JavaResult" type="tns:ArrayOfArrayOfString" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="ReadEmployeeColumns2Java">
+        <s:complexType />
+      </s:element>
+      <s:element name="ReadEmployeeColumns2JavaResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="ReadEmployeeColumns2JavaResult" type="tns:ArrayOfArrayOfString" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+    </s:schema>
+  </wsdl:types>
+  <wsdl:message name="ReadEmployeeAndRelatedTablesSoapIn">
+    <wsdl:part name="parameters" element="tns:ReadEmployeeAndRelatedTables" />
+  </wsdl:message>
+  <wsdl:message name="ReadEmployeeAndRelatedTablesSoapOut">
+    <wsdl:part name="parameters" element="tns:ReadEmployeeAndRelatedTablesResponse" />
+  </wsdl:message>
+  <wsdl:message name="ReadEmployeesAndRelativesSoapIn">
+    <wsdl:part name="parameters" element="tns:ReadEmployeesAndRelatives" />
+  </wsdl:message>
+  <wsdl:message name="ReadEmployeesAndRelativesSoapOut">
+    <wsdl:part name="parameters" element="tns:ReadEmployeesAndRelativesResponse" />
+  </wsdl:message>
+  <wsdl:message name="ReadAllSickEmployees2004SoapIn">
+    <wsdl:part name="parameters" element="tns:ReadAllSickEmployees2004" />
+  </wsdl:message>
+  <wsdl:message name="ReadAllSickEmployees2004SoapOut">
+    <wsdl:part name="parameters" element="tns:ReadAllSickEmployees2004Response" />
+  </wsdl:message>
+  <wsdl:message name="ReadHighestAbsenceSoapIn">
+    <wsdl:part name="parameters" element="tns:ReadHighestAbsence" />
+  </wsdl:message>
+  <wsdl:message name="ReadHighestAbsenceSoapOut">
+    <wsdl:part name="parameters" element="tns:ReadHighestAbsenceResponse" />
+  </wsdl:message>
+  <wsdl:message name="ReadAllKeysSoapIn">
+    <wsdl:part name="parameters" element="tns:ReadAllKeys" />
+  </wsdl:message>
+  <wsdl:message name="ReadAllKeysSoapOut">
+    <wsdl:part name="parameters" element="tns:ReadAllKeysResponse" />
+  </wsdl:message>
+  <wsdl:message name="ReadAllIndexesSoapIn">
+    <wsdl:part name="parameters" element="tns:ReadAllIndexes" />
+  </wsdl:message>
+  <wsdl:message name="ReadAllIndexesSoapOut">
+    <wsdl:part name="parameters" element="tns:ReadAllIndexesResponse" />
+  </wsdl:message>
+  <wsdl:message name="ReadAllConstraintsSoapIn">
+    <wsdl:part name="parameters" element="tns:ReadAllConstraints" />
+  </wsdl:message>
+  <wsdl:message name="ReadAllConstraintsSoapOut">
+    <wsdl:part name="parameters" element="tns:ReadAllConstraintsResponse" />
+  </wsdl:message>
+  <wsdl:message name="ReadAllTables1SoapIn">
+    <wsdl:part name="parameters" element="tns:ReadAllTables1" />
+  </wsdl:message>
+  <wsdl:message name="ReadAllTables1SoapOut">
+    <wsdl:part name="parameters" element="tns:ReadAllTables1Response" />
+  </wsdl:message>
+  <wsdl:message name="ReadAllTables2SoapIn">
+    <wsdl:part name="parameters" element="tns:ReadAllTables2" />
+  </wsdl:message>
+  <wsdl:message name="ReadAllTables2SoapOut">
+    <wsdl:part name="parameters" element="tns:ReadAllTables2Response" />
+  </wsdl:message>
+  <wsdl:message name="ReadEmployeeColumns1SoapIn">
+    <wsdl:part name="parameters" element="tns:ReadEmployeeColumns1" />
+  </wsdl:message>
+  <wsdl:message name="ReadEmployeeColumns1SoapOut">
+    <wsdl:part name="parameters" element="tns:ReadEmployeeColumns1Response" />
+  </wsdl:message>
+  <wsdl:message name="ReadEmployeeColumns2SoapIn">
+    <wsdl:part name="parameters" element="tns:ReadEmployeeColumns2" />
+  </wsdl:message>
+  <wsdl:message name="ReadEmployeeColumns2SoapOut">
+    <wsdl:part name="parameters" element="tns:ReadEmployeeColumns2Response" />
+  </wsdl:message>
+  <wsdl:message name="ReadEmployeeAndRelatedTablesJavaSoapIn">
+    <wsdl:part name="parameters" element="tns:ReadEmployeeAndRelatedTablesJava" />
+  </wsdl:message>
+  <wsdl:message name="ReadEmployeeAndRelatedTablesJavaSoapOut">
+    <wsdl:part name="parameters" element="tns:ReadEmployeeAndRelatedTablesJavaResponse" />
+  </wsdl:message>
+  <wsdl:message name="ReadEmployeesAndRelativesJavaSoapIn">
+    <wsdl:part name="parameters" element="tns:ReadEmployeesAndRelativesJava" />
+  </wsdl:message>
+  <wsdl:message name="ReadEmployeesAndRelativesJavaSoapOut">
+    <wsdl:part name="parameters" element="tns:ReadEmployeesAndRelativesJavaResponse" />
+  </wsdl:message>
+  <wsdl:message name="ReadAllSickEmployees2004JavaSoapIn">
+    <wsdl:part name="parameters" element="tns:ReadAllSickEmployees2004Java" />
+  </wsdl:message>
+  <wsdl:message name="ReadAllSickEmployees2004JavaSoapOut">
+    <wsdl:part name="parameters" element="tns:ReadAllSickEmployees2004JavaResponse" />
+  </wsdl:message>
+  <wsdl:message name="ReadHighestAbsenceJavaSoapIn">
+    <wsdl:part name="parameters" element="tns:ReadHighestAbsenceJava" />
+  </wsdl:message>
+  <wsdl:message name="ReadHighestAbsenceJavaSoapOut">
+    <wsdl:part name="parameters" element="tns:ReadHighestAbsenceJavaResponse" />
+  </wsdl:message>
+  <wsdl:message name="ReadAllKeysJavaSoapIn">
+    <wsdl:part name="parameters" element="tns:ReadAllKeysJava" />
+  </wsdl:message>
+  <wsdl:message name="ReadAllKeysJavaSoapOut">
+    <wsdl:part name="parameters" element="tns:ReadAllKeysJavaResponse" />
+  </wsdl:message>
+  <wsdl:message name="ReadAllIndexesJavaSoapIn">
+    <wsdl:part name="parameters" element="tns:ReadAllIndexesJava" />
+  </wsdl:message>
+  <wsdl:message name="ReadAllIndexesJavaSoapOut">
+    <wsdl:part name="parameters" element="tns:ReadAllIndexesJavaResponse" />
+  </wsdl:message>
+  <wsdl:message name="ReadAllTableConstraintsJavaSoapIn">
+    <wsdl:part name="parameters" element="tns:ReadAllTableConstraintsJava" />
+  </wsdl:message>
+  <wsdl:message name="ReadAllTableConstraintsJavaSoapOut">
+    <wsdl:part name="parameters" element="tns:ReadAllTableConstraintsJavaResponse" />
+  </wsdl:message>
+  <wsdl:message name="ReadAllTables1JavaSoapIn">
+    <wsdl:part name="parameters" element="tns:ReadAllTables1Java" />
+  </wsdl:message>
+  <wsdl:message name="ReadAllTables1JavaSoapOut">
+    <wsdl:part name="parameters" element="tns:ReadAllTables1JavaResponse" />
+  </wsdl:message>
+  <wsdl:message name="ReadAllTables2JavaSoapIn">
+    <wsdl:part name="parameters" element="tns:ReadAllTables2Java" />
+  </wsdl:message>
+  <wsdl:message name="ReadAllTables2JavaSoapOut">
+    <wsdl:part name="parameters" element="tns:ReadAllTables2JavaResponse" />
+  </wsdl:message>
+  <wsdl:message name="ReadEmployeeColumns1JavaSoapIn">
+    <wsdl:part name="parameters" element="tns:ReadEmployeeColumns1Java" />
+  </wsdl:message>
+  <wsdl:message name="ReadEmployeeColumns1JavaSoapOut">
+    <wsdl:part name="parameters" element="tns:ReadEmployeeColumns1JavaResponse" />
+  </wsdl:message>
+  <wsdl:message name="ReadEmployeeColumns2JavaSoapIn">
+    <wsdl:part name="parameters" element="tns:ReadEmployeeColumns2Java" />
+  </wsdl:message>
+  <wsdl:message name="ReadEmployeeColumns2JavaSoapOut">
+    <wsdl:part name="parameters" element="tns:ReadEmployeeColumns2JavaResponse" />
+  </wsdl:message>
+  <wsdl:portType name="CronusServiceSoap">
+    <wsdl:operation name="ReadEmployeeAndRelatedTables">
+      <wsdl:input message="tns:ReadEmployeeAndRelatedTablesSoapIn" />
+      <wsdl:output message="tns:ReadEmployeeAndRelatedTablesSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="ReadEmployeesAndRelatives">
+      <wsdl:input message="tns:ReadEmployeesAndRelativesSoapIn" />
+      <wsdl:output message="tns:ReadEmployeesAndRelativesSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="ReadAllSickEmployees2004">
+      <wsdl:input message="tns:ReadAllSickEmployees2004SoapIn" />
+      <wsdl:output message="tns:ReadAllSickEmployees2004SoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="ReadHighestAbsence">
+      <wsdl:input message="tns:ReadHighestAbsenceSoapIn" />
+      <wsdl:output message="tns:ReadHighestAbsenceSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="ReadAllKeys">
+      <wsdl:input message="tns:ReadAllKeysSoapIn" />
+      <wsdl:output message="tns:ReadAllKeysSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="ReadAllIndexes">
+      <wsdl:input message="tns:ReadAllIndexesSoapIn" />
+      <wsdl:output message="tns:ReadAllIndexesSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="ReadAllConstraints">
+      <wsdl:input message="tns:ReadAllConstraintsSoapIn" />
+      <wsdl:output message="tns:ReadAllConstraintsSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="ReadAllTables1">
+      <wsdl:input message="tns:ReadAllTables1SoapIn" />
+      <wsdl:output message="tns:ReadAllTables1SoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="ReadAllTables2">
+      <wsdl:input message="tns:ReadAllTables2SoapIn" />
+      <wsdl:output message="tns:ReadAllTables2SoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="ReadEmployeeColumns1">
+      <wsdl:input message="tns:ReadEmployeeColumns1SoapIn" />
+      <wsdl:output message="tns:ReadEmployeeColumns1SoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="ReadEmployeeColumns2">
+      <wsdl:input message="tns:ReadEmployeeColumns2SoapIn" />
+      <wsdl:output message="tns:ReadEmployeeColumns2SoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="ReadEmployeeAndRelatedTablesJava">
+      <wsdl:input message="tns:ReadEmployeeAndRelatedTablesJavaSoapIn" />
+      <wsdl:output message="tns:ReadEmployeeAndRelatedTablesJavaSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="ReadEmployeesAndRelativesJava">
+      <wsdl:input message="tns:ReadEmployeesAndRelativesJavaSoapIn" />
+      <wsdl:output message="tns:ReadEmployeesAndRelativesJavaSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="ReadAllSickEmployees2004Java">
+      <wsdl:input message="tns:ReadAllSickEmployees2004JavaSoapIn" />
+      <wsdl:output message="tns:ReadAllSickEmployees2004JavaSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="ReadHighestAbsenceJava">
+      <wsdl:input message="tns:ReadHighestAbsenceJavaSoapIn" />
+      <wsdl:output message="tns:ReadHighestAbsenceJavaSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="ReadAllKeysJava">
+      <wsdl:input message="tns:ReadAllKeysJavaSoapIn" />
+      <wsdl:output message="tns:ReadAllKeysJavaSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="ReadAllIndexesJava">
+      <wsdl:input message="tns:ReadAllIndexesJavaSoapIn" />
+      <wsdl:output message="tns:ReadAllIndexesJavaSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="ReadAllTableConstraintsJava">
+      <wsdl:input message="tns:ReadAllTableConstraintsJavaSoapIn" />
+      <wsdl:output message="tns:ReadAllTableConstraintsJavaSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="ReadAllTables1Java">
+      <wsdl:input message="tns:ReadAllTables1JavaSoapIn" />
+      <wsdl:output message="tns:ReadAllTables1JavaSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="ReadAllTables2Java">
+      <wsdl:input message="tns:ReadAllTables2JavaSoapIn" />
+      <wsdl:output message="tns:ReadAllTables2JavaSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="ReadEmployeeColumns1Java">
+      <wsdl:input message="tns:ReadEmployeeColumns1JavaSoapIn" />
+      <wsdl:output message="tns:ReadEmployeeColumns1JavaSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="ReadEmployeeColumns2Java">
+      <wsdl:input message="tns:ReadEmployeeColumns2JavaSoapIn" />
+      <wsdl:output message="tns:ReadEmployeeColumns2JavaSoapOut" />
+    </wsdl:operation>
+  </wsdl:portType>
+  <wsdl:binding name="CronusServiceSoap" type="tns:CronusServiceSoap">
+    <soap:binding transport="http://schemas.xmlsoap.org/soap/http" />
+    <wsdl:operation name="ReadEmployeeAndRelatedTables">
+      <soap:operation soapAction="http://tempuri.org/ReadEmployeeAndRelatedTables" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="ReadEmployeesAndRelatives">
+      <soap:operation soapAction="http://tempuri.org/ReadEmployeesAndRelatives" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="ReadAllSickEmployees2004">
+      <soap:operation soapAction="http://tempuri.org/ReadAllSickEmployees2004" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="ReadHighestAbsence">
+      <soap:operation soapAction="http://tempuri.org/ReadHighestAbsence" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="ReadAllKeys">
+      <soap:operation soapAction="http://tempuri.org/ReadAllKeys" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="ReadAllIndexes">
+      <soap:operation soapAction="http://tempuri.org/ReadAllIndexes" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="ReadAllConstraints">
+      <soap:operation soapAction="http://tempuri.org/ReadAllConstraints" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="ReadAllTables1">
+      <soap:operation soapAction="http://tempuri.org/ReadAllTables1" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="ReadAllTables2">
+      <soap:operation soapAction="http://tempuri.org/ReadAllTables2" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="ReadEmployeeColumns1">
+      <soap:operation soapAction="http://tempuri.org/ReadEmployeeColumns1" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="ReadEmployeeColumns2">
+      <soap:operation soapAction="http://tempuri.org/ReadEmployeeColumns2" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="ReadEmployeeAndRelatedTablesJava">
+      <soap:operation soapAction="http://tempuri.org/ReadEmployeeAndRelatedTablesJava" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="ReadEmployeesAndRelativesJava">
+      <soap:operation soapAction="http://tempuri.org/ReadEmployeesAndRelativesJava" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="ReadAllSickEmployees2004Java">
+      <soap:operation soapAction="http://tempuri.org/ReadAllSickEmployees2004Java" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="ReadHighestAbsenceJava">
+      <soap:operation soapAction="http://tempuri.org/ReadHighestAbsenceJava" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="ReadAllKeysJava">
+      <soap:operation soapAction="http://tempuri.org/ReadAllKeysJava" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="ReadAllIndexesJava">
+      <soap:operation soapAction="http://tempuri.org/ReadAllIndexesJava" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="ReadAllTableConstraintsJava">
+      <soap:operation soapAction="http://tempuri.org/ReadAllTableConstraintsJava" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="ReadAllTables1Java">
+      <soap:operation soapAction="http://tempuri.org/ReadAllTables1Java" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="ReadAllTables2Java">
+      <soap:operation soapAction="http://tempuri.org/ReadAllTables2Java" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="ReadEmployeeColumns1Java">
+      <soap:operation soapAction="http://tempuri.org/ReadEmployeeColumns1Java" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="ReadEmployeeColumns2Java">
+      <soap:operation soapAction="http://tempuri.org/ReadEmployeeColumns2Java" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+  </wsdl:binding>
+  <wsdl:binding name="CronusServiceSoap12" type="tns:CronusServiceSoap">
+    <soap12:binding transport="http://schemas.xmlsoap.org/soap/http" />
+    <wsdl:operation name="ReadEmployeeAndRelatedTables">
+      <soap12:operation soapAction="http://tempuri.org/ReadEmployeeAndRelatedTables" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="ReadEmployeesAndRelatives">
+      <soap12:operation soapAction="http://tempuri.org/ReadEmployeesAndRelatives" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="ReadAllSickEmployees2004">
+      <soap12:operation soapAction="http://tempuri.org/ReadAllSickEmployees2004" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="ReadHighestAbsence">
+      <soap12:operation soapAction="http://tempuri.org/ReadHighestAbsence" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="ReadAllKeys">
+      <soap12:operation soapAction="http://tempuri.org/ReadAllKeys" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="ReadAllIndexes">
+      <soap12:operation soapAction="http://tempuri.org/ReadAllIndexes" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="ReadAllConstraints">
+      <soap12:operation soapAction="http://tempuri.org/ReadAllConstraints" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="ReadAllTables1">
+      <soap12:operation soapAction="http://tempuri.org/ReadAllTables1" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="ReadAllTables2">
+      <soap12:operation soapAction="http://tempuri.org/ReadAllTables2" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="ReadEmployeeColumns1">
+      <soap12:operation soapAction="http://tempuri.org/ReadEmployeeColumns1" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="ReadEmployeeColumns2">
+      <soap12:operation soapAction="http://tempuri.org/ReadEmployeeColumns2" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="ReadEmployeeAndRelatedTablesJava">
+      <soap12:operation soapAction="http://tempuri.org/ReadEmployeeAndRelatedTablesJava" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="ReadEmployeesAndRelativesJava">
+      <soap12:operation soapAction="http://tempuri.org/ReadEmployeesAndRelativesJava" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="ReadAllSickEmployees2004Java">
+      <soap12:operation soapAction="http://tempuri.org/ReadAllSickEmployees2004Java" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="ReadHighestAbsenceJava">
+      <soap12:operation soapAction="http://tempuri.org/ReadHighestAbsenceJava" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="ReadAllKeysJava">
+      <soap12:operation soapAction="http://tempuri.org/ReadAllKeysJava" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="ReadAllIndexesJava">
+      <soap12:operation soapAction="http://tempuri.org/ReadAllIndexesJava" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="ReadAllTableConstraintsJava">
+      <soap12:operation soapAction="http://tempuri.org/ReadAllTableConstraintsJava" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="ReadAllTables1Java">
+      <soap12:operation soapAction="http://tempuri.org/ReadAllTables1Java" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="ReadAllTables2Java">
+      <soap12:operation soapAction="http://tempuri.org/ReadAllTables2Java" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="ReadEmployeeColumns1Java">
+      <soap12:operation soapAction="http://tempuri.org/ReadEmployeeColumns1Java" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="ReadEmployeeColumns2Java">
+      <soap12:operation soapAction="http://tempuri.org/ReadEmployeeColumns2Java" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+  </wsdl:binding>
+  <wsdl:service name="CronusService">
+    <wsdl:port name="CronusServiceSoap" binding="tns:CronusServiceSoap">
+      <soap:address location="http://localhost/Assignment5WebApp/CronusService.asmx" />
+    </wsdl:port>
+    <wsdl:port name="CronusServiceSoap12" binding="tns:CronusServiceSoap12">
+      <soap12:address location="http://localhost/Assignment5WebApp/CronusService.asmx" />
+    </wsdl:port>
+  </wsdl:service>
+</wsdl:definitions>
